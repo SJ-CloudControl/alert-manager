@@ -11,7 +11,7 @@ build:
     image_template: alertmanager-0.20
 
 deploy:
-    context: alpha/DEV
+    context: nashida2210/DEV
     type: statefulset
     replicas: 1
     port:
