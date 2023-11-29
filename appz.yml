@@ -1,7 +1,7 @@
 app:
     name: alertmanager
     code: alertmanager
-    notify: nmeeran@ecloudcontrol.com
+    notify: sjunu@ecloudcontrol.com
 
 build:
     version: 0.2
@@ -11,7 +11,7 @@ build:
     image_template: alertmanager-0.20
 
 deploy:
-    context: nashida2210/DEV
+    context: SJ-CloudControl/DEV
     type: statefulset
     replicas: 1
     port:
@@ -27,6 +27,6 @@ volumes:
 properties:
     SLACK_API_URL:
       vault: SLACK_API_URL
-    SLACK_CHANNEL: notification-openebs
-    CLUSTER_NAME: AWS_QA
+    SLACK_CHANNEL: appz-delivery
+    CLUSTER_NAME: QA
     revision : 19
